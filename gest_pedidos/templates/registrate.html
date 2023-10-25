@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<title>
+    Registrate
+</title>
+
+</head>
+
+<body>
+
+    <form action="/reg/" method="POST">
+        {% csrf_token %}
+
+        <p>Usuario: <input type="text" name="usu"></p>
+        <p>email: <input type="text" name="eml"></p>
+        <p>ingrese su contraseña: <input type="text" name="ctrs"></p>
+        <p>reingrese su contraseña <input type="text" name="rctrs"></p>
+        <input type="submit" value="Registrate">
+
+    </form>
+</body>
+
+</html>
